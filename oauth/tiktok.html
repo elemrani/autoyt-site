@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connexion TikTok</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <p class="kicker"><a href="../">AutoYT</a></p>
+  <h1>Connexion TikTok</h1>
+  <p id="msg">Retour vers AutoYT sur cet ordinateur…</p>
+</main>
+<script>
+  // AutoYT tourne en local : TikTok exige une adresse https, cette page fait suivre le code d'autorisation
+  // vers la webapp locale. Rien n'est enregistré ni envoyé ailleurs.
+  var q = location.search;
+  if (q.indexOf("code=") >= 0 || q.indexOf("error=") >= 0) {
+    location.replace("http://127.0.0.1:8700/oauth/tiktok/callback" + q);
+  } else {
+    document.getElementById("msg").textContent = "Aucun code d'autorisation reçu.";
+  }
+</script>
+</body>
+</html>

@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Confidentialité AutoYT</title>
-<meta name="description" content="Politique de confidentialité d'AutoYT : quelles données YouTube l'application utilise, où elles restent, comment révoquer l'accès.">
+<meta name="description" content="Politique de confidentialité d'AutoYT : quelles données YouTube, Instagram et TikTok l'application utilise, où elles restent, comment révoquer l'accès.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <p class="kicker"><a href="./">AutoYT</a></p>
   <h1>Politique de confidentialité</h1>
-  <p class="muted">Dernière mise à jour : 18 novembre 2026</p>
+  <p class="muted">Dernière mise à jour : 20 novembre 2026</p>
 
   <p>AutoYT est une application personnelle, installée et utilisée uniquement par son propriétaire sur son propre
   ordinateur. Elle n'est pas proposée au public.</p>
@@ -27,8 +27,20 @@
   <p>AutoYT ne lit, ne modifie et ne supprime aucune autre donnée : ni vidéos existantes, ni commentaires, ni
   statistiques, ni données d'autres comptes.</p>
 
+  <h2>Données Instagram (Meta) et TikTok</h2>
+  <p>Quand le propriétaire connecte un de ses comptes Instagram ou TikTok, AutoYT reçoit un jeton d'accès et
+  l'utilise uniquement pour :</p>
+  <ul>
+    <li>publier sur ce compte les vidéos validées par le propriétaire, avec la légende qu'il a choisie
+    (Instagram : <code>instagram_business_basic</code>, <code>instagram_business_content_publish</code> ;
+    TikTok : <code>video.upload</code>, <code>video.publish</code>) ;</li>
+    <li>lire le nom et l'identifiant du compte, pour afficher à quel compte l'application est connectée
+    (TikTok : <code>user.info.basic</code>, <code>user.info.profile</code>).</li>
+  </ul>
+  <p>AutoYT ne lit ni les messages, ni les commentaires, ni les abonnés, ni les contenus d'autres comptes.</p>
+
   <h2>Où sont conservées les données</h2>
-  <p>Les jetons d'accès fournis par Google et le nom de la chaîne sont enregistrés uniquement sur l'ordinateur du
+  <p>Les jetons d'accès fournis par Google, Meta et TikTok et le nom des comptes sont enregistrés uniquement sur l'ordinateur du
   propriétaire. Ils ne sont envoyés à aucun serveur tiers, ni partagés, ni vendus, et ne servent à aucune publicité ni
   à aucune analyse. Les seuls échanges avec Google sont les appels à l'API YouTube Data décrits ci-dessus.</p>
 
@@ -36,7 +48,8 @@
   <p>L'accès peut être retiré à tout moment :</p>
   <ul>
     <li>dans AutoYT, bouton « Déconnecter » sur la page de la chaîne, qui supprime les jetons enregistrés ;</li>
-    <li>ou depuis le compte Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>ou depuis le compte Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ;</li>
+    <li>Instagram : Paramètres → Applications et sites web ; TikTok : Paramètres → Sécurité → Applications autorisées.</li>
   </ul>
 
   <h2>Services YouTube et Google</h2>
@@ -58,7 +71,11 @@
     <code>youtube.upload</code> (to upload the videos the owner has approved, with the title, description, tags and
     visibility they chose) and <code>youtube.readonly</code> (to read the channel name and ID, to show which channel
     is connected). AutoYT does not read, modify or delete any other data.</p>
-    <p><strong>Storage.</strong> OAuth tokens and the channel name are stored only on the owner's computer. They are
+    <p><strong>Instagram (Meta) and TikTok data.</strong> When the owner connects one of their Instagram or TikTok
+    accounts, AutoYT uses the access token only to publish the videos the owner approved, with the caption they
+    chose, and to read the account name and ID. It does not read messages, comments, followers or other accounts'
+    content.</p>
+    <p><strong>Storage.</strong> OAuth tokens and account names are stored only on the owner's computer. They are
     never sent to third-party servers, shared, sold, or used for advertising or analytics.</p>
     <p><strong>Revoking access.</strong> Use “Déconnecter” in AutoYT, which deletes the stored tokens, or
     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
